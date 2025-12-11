@@ -201,8 +201,6 @@
                                             <span class="font-medium text-gray-900">Penjual</span>
                                         </div>
                                         <p class="text-gray-600 font-mono">{{ $account->seller_number ?? '-' }}</p>
-                                        <p class="text-xs text-gray-500 mt-1">Nama:
-                                            {{ $account->seller->name ?? 'Admin' }}</p>
                                     </div>
 
                                     <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
@@ -273,6 +271,7 @@
         </div>
     </div>
 
+    <x-footer />
 </body>
 
 </html>

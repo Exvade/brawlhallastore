@@ -5,11 +5,12 @@
 
             <div class="space-y-4">
                 <div class="flex items-center gap-2">
-                    <img src="./brawlhallastore-logo.webp" alt="Logo" class="h-8 w-8 brightness-0 invert">
+                    <img src="{{ asset('brawlhallastore-logo.webp') }}" alt="Logo" class="h-8 w-8 brightness-0 invert">
                     <span class="text-xl font-bold tracking-wider italic">BRAWLHALLASTORE</span>
                 </div>
                 <p class="text-blue-200 text-sm leading-relaxed">
-                    BRAWLHALLASTORE adalah Tempat Jasa Joki, Coaching dan Jual Beli Akun Murah Terpercaya di Indonesia.
+                    BRAWLHALLASTORE adalah Tempat Topup, Joki, Coaching dan Jual Beli Akun Murah Terpercaya di
+                    Indonesia.
                     Tersedia berbagai macam pembayaran lengkap yang pasti memudahkan Anda untuk bertransaksi.
                 </p>
             </div>
