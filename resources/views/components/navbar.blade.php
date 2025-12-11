@@ -4,7 +4,8 @@
 
         <a href="{{ route('home') }}"
             class="flex items-center cursor-pointer hover:scale-105 transition-transform duration-200">
-            <img src="./brawlhallastore-logo.webp" alt="Logo" class="h-8 sm:h-10 mr-2 sm:mr-3 drop-shadow-lg">
+            <img src="{{ asset('brawlhallastore-logo.webp') }}" alt="Logo"
+                class="h-8 sm:h-10 mr-2 sm:mr-3 drop-shadow-lg">
             <span class="text-lg sm:text-xl font-bold text-white uppercase italic tracking-wide drop-shadow-md">
                 BrawlhallaStore
             </span>
@@ -55,7 +56,8 @@
                     <button @click="openProfile = !openProfile"
                         class="hover:scale-110 transition-transform duration-200 flex items-center gap-2">
                         @if (Auth::user()->avatar)
-                            <img src="{{ Auth::user()->avatar }}" alt="Profil"
+                            <img src="{{ Str::startsWith(Auth::user()->avatar, 'http') ? Auth::user()->avatar : asset('storage/' . Auth::user()->avatar) }}"
+                                alt="Profil"
                                 class="w-10 h-10 rounded-full object-cover border-2 border-white/20 shadow-lg">
                         @else
                             <div
