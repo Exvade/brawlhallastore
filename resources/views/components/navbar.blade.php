@@ -30,7 +30,7 @@
                 </button>
                 <div
                     class="absolute left-0 mt-2 w-48 bg-[#021462] border border-blue-700 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform origin-top-left">
-                    <a href="#"
+                    <a href="{{ route('order.joki-rank') }}"
                         class="block px-4 py-2 text-sm text-blue-100 hover:bg-blue-800 hover:text-white">Joki Rank</a>
                     <a href="#"
                         class="block px-4 py-2 text-sm text-blue-100 hover:bg-blue-800 hover:text-white">Joki
@@ -73,6 +73,10 @@
                             <p class="text-sm text-white font-bold">{{ Auth::user()->name }}</p>
                             <p class="text-xs text-blue-300 truncate">{{ Auth::user()->email }}</p>
                         </div>
+                        <a href="{{ route('history.index') }}"
+                            class="block px-4 py-2 text-sm text-blue-100 hover:bg-blue-800">
+                            Riwayat Pesanan
+                        </a>
                         @if (Auth::user()->role === 'admin')
                             <a href="/admin" class="block px-4 py-2 text-sm text-blue-100 hover:bg-blue-800">Dashboard
                                 Admin</a>

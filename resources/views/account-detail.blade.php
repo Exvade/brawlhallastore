@@ -182,9 +182,8 @@
 
                             <div class="mb-8">
                                 <h3 class="text-lg font-semibold text-gray-900 mb-3">Deskripsi</h3>
-                                <div class="text-gray-700 whitespace-pre-wrap leading-relaxed">
-                                    {{ $account->description }}
-                                </div>
+                                <span
+                                    class="text-gray-700 whitespace-pre-wrap leading-relaxed">{{ $account->description }}</span>
                             </div>
 
                             <div class="mb-8">

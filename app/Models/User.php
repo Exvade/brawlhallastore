@@ -45,4 +45,10 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function canAccessPanel(\Filament\Panel $panel): bool
+    {
+        // Admin dan Worker boleh masuk. Member biasa DITOLAK.
+        return in_array($this->role, ['admin', 'worker']);
+    }
 }
